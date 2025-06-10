@@ -1,59 +1,36 @@
-# CrudAngularMaterial
+# 🧾 CRUD com Angular e Angular Material
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
+Este projeto foi desenvolvido como parte dos meus estudos iniciais em **Angular**. Ele consiste em uma aplicação de **cadastro e consulta de clientes**, utilizando **Angular Material** para a interface e **localStorage** para persistência de dados.
 
-## Development server
+## ✨ Funcionalidades
 
-To start a local development server, run:
+- Cadastro de clientes com os seguintes campos:
+  - Nome
+  - E-mail
+  - CPF (com máscara)
+  - Data de Nascimento (com máscara)
+  - Estado (UF) — carregado via API
+  - Município — carregado conforme UF selecionada
+- Consulta de clientes pelo nome
+- Edição e exclusão de cadastros
+- Persistência dos dados no `localStorage`
+- Consumo da [BrasilAPI](https://brasilapi.com.br/) para listar:
+  - Estados (UFs)
+  - Municípios por UF
 
-```bash
-ng serve
-```
+## 🛠 Tecnologias Utilizadas
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- [Angular](https://angular.io/)
+- [Angular Material](https://material.angular.io/)
+- [RxJS](https://rxjs.dev/)
+- [BrasilAPI](https://brasilapi.com.br/)
+- [ngx-mask](https://www.npmjs.com/package/ngx-mask) (para formatação de CPF e datas)
+- `localStorage` para simulação de backend
 
-## Code scaffolding
+## 📷 Capturas de Tela
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+![image](https://github.com/user-attachments/assets/e722c187-82a8-4b45-9592-edb317096fd8)
 
-```bash
-ng generate component component-name
-```
+![image](https://github.com/user-attachments/assets/1bd9c8c6-096f-48d4-adeb-f9f731e500dd)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+![image](https://github.com/user-attachments/assets/3a921f59-ef17-4909-ae6b-99f304e480eb)
